@@ -206,7 +206,15 @@ p {
   margin-left: 10px; /* adjust as needed */
 }
 
-
+.fade-in{
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+  }
+  
+.fade-in:hover {
+    opacity: 1;
+  }
+  
 .about .box .year_company {
   min-width: 150px;
 }
@@ -255,7 +263,7 @@ font-weight: 500;
 
 .interesses ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .interesses ul li {

@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="path/to/bootstrap.min.css">
-</head>
-
 <body>
   <div class="container">
     <div class="left-side">
@@ -87,7 +85,6 @@
             <div class="imgBx"></div>
             <a href="https://next.youngcapital.nl/werkgevers/it" target="_blank"><img src="Afbeelding1.png"></a>
         </div>
-
         </div>
     <div class="right-side">
         <nav>
@@ -96,6 +93,7 @@
             <a href="#devops">DevOps</a>
             <a href="#skills">Skills</a>
             <a href="#persoonlijk" id="persoonlijk">Persoonlijk</a>
+            <a href="#hobbies" id="hobby" onclick="openNewModal()">Hobbies</a>
         </nav>
         <!-- HTML code for the modal element -->
 <div id="myModal" class="modal">
@@ -119,9 +117,29 @@
             <span class="percent" data-percent="75%">
             <div style="width: 75%"></div></span></li>
             </ul>
+            </div>
+        </div>
+        <!-- HTML code for the new modal element -->
+<div id="newModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="about interesses">
+            <h2 class="title2">Hobbies en Interesses</h2>
+            <p><ul>
+              <li><i class="fa fa-futbol-o" aria-hidden="true" data-tooltip="Zaalvoetbal is een populaire binnensport in Nederland. 
+                Het wordt gespeeld met vijf spelers per team en een kleine, harde bal."></i> Zaalvoetballen</li>
+              <li><i class="fa fa-heartbeat" aria-hidden="true" data-tooltip="Kickboksen is een vechtsport waarbij zowel de handen als de benen mogen worden gebruikt. 
+                Het is een intensieve sport die zowel fysiek als mentaal uitdagend is."></i> Kickboksen</li>
+              <li><i class="fa fa-laptop" aria-hidden="true" data-tooltip="Programmeren is het schrijven van code om software te ontwikkelen. 
+                Het is een vaardigheid die steeds belangrijker wordt in de moderne wereld."></i> Programmeren</li>
+              <li><i class="fa fa-puzzle-piece" aria-hidden="true" data-tooltip="Puzzelen is een leuke en ontspannende hobby waarbij je je hersenen traint en je creativiteit kunt uiten. 
+                Er zijn veel verschillende soorten puzzels, zoals kruiswoordpuzzels, sudoku's en legpuzzels."></i> Puzzelen</li>
+              <li><i class="fa fa-gamepad" aria-hidden="true" data-tooltip="Gamen is een populaire hobby onder jongeren en volwassenen. 
+                Het is een leuke manier om te ontspannen en uitdagende spelletjes te spelen."></i> Gamen</li>
+            </ul></p>
     </div>
-  </div>
-  
+</div>
+</div>
         <br>
         <br>
         <br>
@@ -140,7 +158,7 @@
                 <h4>EXIN Agile Scrum Foundation</h4>
                 <p>Kennis over Agile methodes, gecombineerd met kennis over de Scrum praktijk opgedaan. Agile Scrum richt zich op het behalen van het doel door succesvol samen te werken.</p>
             </div>
-            <img src="Agile Scrum.png" alt="Certificate image">
+            <img src="Agile Scrum.png" alt="Certificate image" class="fade-in">
         </div>
         <div class="box">
             <div class="year_company">
@@ -151,7 +169,7 @@
                 <h4>ISTQB Certified Tester, Foundation Level</h4>
                 <p>Kennis over test principes & standaards, test management, test fasering, reviews, inspecties en testtechnieken voor zowel white-box als black-box testen en testtools opgedaan.</p>
     </div>
-    <img src="ISTQB.png" alt="Certificate image">
+    <img src="ISTQB.png" alt="Certificate image" class="fade-in">
   </div>
   <div class="box">
     <div class="year_company">
@@ -162,7 +180,7 @@
         <h4>Azure 900 Fundamentals</h4>
         <p>Kennis over hoe je aan de slag gaat met Azure abonnementen en accounts opgedaan. De voordelen van cloud computing diensten. Onderscheid maken tussen verschillende cloud computing soorten en categorieën.</p>
   </div>
-  <img src="azure.png" alt="Certificate image">
+  <img src="azure.png" alt="Certificate image" class="fade-in">
   </div>
 
   <div class="box">
@@ -177,7 +195,7 @@
 
   <div class="about">
     <h2 class="title2" id="devops">DevOps Traineeship</h2>
-    <p>In twee maanden de beginselen van programmeren geleerd. Lessen gehad in HTML, CSS, Javascript, Java, LowCode (Outsystems) & Git(hub). 
+    <p>In twee maanden tijd intensief de beginselen van programmeren geleerd. Training gehad in HTML, CSS, Javascript, Java, LowCode (Outsystems) & Git(hub). 
         In een groep van 7 trainees een website gemaakt waarbij er ook gebruik gemaakt werd van Trello, Bootstrap, UML, deployen naar Azure, Entity Framework, Web-api's, Spring Framework en JSON.
         Ook examens gemaakt in Agile/Scrum Foundation, ISTQB en Azure 900 Fundamentals. </p></div>
 
@@ -212,17 +230,8 @@
         <div class="percent">
         <div style="width: 60%"></div>
     </div>
-    </div>
-  <div class="about interesses">
-    <h2 class="title2">Hobbies en Interesses</h2>
-    <ul>
-        <li><i class="fa fa-futbol-o" aria-hidden="true"></i> Voetballen</li>
-        <li><i class="fa-thin fa-boxing-glove" aria-hidden="true"></i> Kickboksen</li>
-        <li><i class="fa fa-laptop" aria-hidden="true"></i> Programmeren</li>
-        <li><i class="fa fa-puzzle-piece" aria-hidden="true"></i> Puzzelen</li>
-        <li><i class="fa fa-gamepad" aria-hidden="true"></i> Gamen</li>
-    </ul>
-</div>
+    </div>      
+
 <script src="interactief.js"></script>
 <audio autoplay>
     <source src="Moonlight.mp3" type="audio/mpeg">Your browser does not support the audio format.
