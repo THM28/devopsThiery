@@ -34,12 +34,3 @@ function openNewModal() {
   newModal.style.display = "block";
 }
 
-hobbiesList.forEach((hobby, index) => {
-  hobby.addEventListener("click", () => {
-    hobbyTitle.innerText = hobby.innerText;
-    hobbyInfo.innerText = getHobbyInfo(index);
-    hobbiesPopup.style.display = "block";
-    // Show the modal
-    newModal.style.display = "block";
-  });
-});
