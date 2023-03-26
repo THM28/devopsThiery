@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap')
-*
+
 {
   margin: 0;
   padding: 0;
@@ -73,9 +73,9 @@
   }
 
   .profileText h2 span {
-font-size: 0.8em;
-font-weight: 300;
-color: #fff;
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #fff;
 }
 
 .contactInfo .title {
@@ -287,6 +287,13 @@ margin: 0.005px;
   width: 20px;
 }
 
+video {
+  width: 700px; /* Set the width to 1280 pixels for a 720p resolution */
+  height: 405px; /* Set the height to 720 pixels for a 720p resolution */
+  max-width: 100%; /* Ensure the video fits within its container */
+  max-height: 100%; /* Ensure the video fits within its container */
+}
+
 .about .certificaten {
   color: #333;
   font-size: 16px;
@@ -379,6 +386,30 @@ a{
   text-decoration: underline;
 }
 
+.delete-button {
+  background-image: url("boxing.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: #03a9f4;
+  float: right;
+}
+
+.tooltip {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
 @media (max-width: 1000px){
   .container{
     margin: 10px;
@@ -420,27 +451,4 @@ a{
   width: fit-content;
   height: fit-content;
 }
-}
-
-.delete-button {
-  background-image: url("boxing.jpeg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: none;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  color: #03a9f4;
-}
-
-.tooltip {
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 5px;
-  background-color: black;
-  color: white;
-  border-radius: 5px;
-  font-size: 14px;
 }

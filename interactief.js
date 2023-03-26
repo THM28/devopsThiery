@@ -60,7 +60,7 @@ let video;
 heartIcon.addEventListener("mouseover", () => {
   if (!video) {
     video = document.createElement("video");
-    video.src = "path/to/kickboxing/video.mp4";
+    video.src = "kickboxen.mp4";
     video.autoplay = true;
     video.controls = true;
     videoContainer.appendChild(video);
